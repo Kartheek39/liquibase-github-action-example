@@ -1,0 +1,1 @@
+alter table person1 add column month_date date;

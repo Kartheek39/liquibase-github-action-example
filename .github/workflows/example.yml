@@ -1,4 +1,8 @@
-on: [push]
+on:
+  push:
+    branches: 
+      - main
+   
 
 jobs:
   test-liquibase-action:
@@ -12,5 +16,5 @@ jobs:
           classpath: 'example/changelogs'
           changeLogFile: 'samplechangelog.h2.sql'
           username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
+          password: ${{ secrets.POSTGRES_PASSWORD }}
           url: ${{ secrets.URL }}

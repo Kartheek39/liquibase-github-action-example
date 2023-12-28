@@ -2,6 +2,6 @@
 
 logLevel: info
 changeLogFile: samplechangelog.h2.sql
-url: postgres.cxvuo26fbjpa.us-east-1.rds.amazonaws.com
+url: jdbc:postgresql://postgres.cxvuo26fbjpa.us-east-1.rds.amazonaws.com:5432/postgresql?user=postgres&password=Mah696794
 username: postgres
 password: Mah696794

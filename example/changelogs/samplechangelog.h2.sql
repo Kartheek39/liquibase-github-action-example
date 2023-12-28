@@ -6,6 +6,7 @@ create table company2 (
     address1 varchar(50),
     address2 varchar(50),
     city varchar(30),
-    last_update date,
-    create_date date
+    last_update date
 )
+
+alter table company2 add column create_date date;

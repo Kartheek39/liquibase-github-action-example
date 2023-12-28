@@ -9,3 +9,7 @@ create table person1 (
     address2 varchar(50),
     city varchar(30)
 )
+
+--changeset prod:8
+--rollback ALTER TABLE person DROP COLUMN country;
+alter table person1 add column country varchar(2)

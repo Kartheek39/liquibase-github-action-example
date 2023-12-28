@@ -17,3 +17,11 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.POSTGRES_PASSWORD }}
           url: ${{ secrets.URL }}
+      - uses: liquibase/liquibase-github-action@v2
+        with:
+          operation: 'execute-sql'
+          classpath: 'example/changelogs'
+          sqlFile: 'insert_data.sql'
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.POSTGRES_PASSWORD }}
+          url: ${{ secrets.URL }}

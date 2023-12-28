@@ -13,3 +13,7 @@ create table person1 (
 --changeset prod:8
 --rollback ALTER TABLE person DROP COLUMN country;
 alter table person1 add column country varchar(2)
+
+--changeset mahesh:9
+--rollback ALTER TABLE person DROP COLUMN country;
+alter table person1 add column month_date date

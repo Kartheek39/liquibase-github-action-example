@@ -1,4 +1,4 @@
---changeset your.name:7
+--changeset prod:7
 --rollback DROP TABLE company;
 create table company3 (
     id int primary key,

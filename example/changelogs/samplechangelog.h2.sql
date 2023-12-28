@@ -1,6 +1,8 @@
---changeset prod:7
---rollback DROP TABLE company;
-create table company3 (
+--liquibase formatted sql
+
+--changeset pord:7
+--rollback DROP TABLE person;
+create table person1 (
     id int primary key,
     name varchar(50) not null,
     address1 varchar(50),

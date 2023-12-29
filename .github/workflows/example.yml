@@ -19,5 +19,5 @@ jobs:
           url: ${{ secrets.URL }}
       - name: Execute postgress file
         run: 
-          PGPASSWORD=Mah696794 psql -h postgres.cxvuo26fbjpa.us-east-1.rds.amazonaws.com -p 5432 -U postgres -d test_db -f ~/example/changelogs/insert_data.sql
+          PGPASSWORD=Mah696794 psql -h postgres.cxvuo26fbjpa.us-east-1.rds.amazonaws.com -p 5432 -U postgres -d test_db -f /home/runner/work/liquibase-github-action-example/liquibase-github-action-example/example/changelogs/insert_data.sql
 

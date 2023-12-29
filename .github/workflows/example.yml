@@ -18,6 +18,5 @@ jobs:
           password: ${{ secrets.POSTGRES_PASSWORD }}
           url: ${{ secrets.URL }}
       - name: Execute postgress file
-        run: psql -h postgres.cxvuo26fbjpa.us-east-1.rds.amazonaws.com -p 5432 -U postgres -d test_db -f example/changelogs/insert_data.sql
-        env:
-          DB_PASSWORD: Mah696794
+        run: psql -h postgres.cxvuo26fbjpa.us-east-1.rds.amazonaws.com -p 5432 -U postgres -d test_db -f example/changelogs/insert_data.sql --password=Mah696794
+
